@@ -7,33 +7,52 @@ on:
   push:
     branches: [main]
     paths:
-      - 'tools/generate_github_cards.py'
+      - 'tools/**'
+      - '.github/workflows/refresh-cards.yml'
 
 permissions:
   contents: write
 
+concurrency:
+  group: refresh-cards
+  cancel-in-progress: false
+
 jobs:
   cards:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
 
-      - name: Generate contribution + dashboard cards
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            snake/github-snake.svg
+            snake/github-snake-dark.svg?palette=github-dark
+
+      - name: Frame snake with themed window chrome
+        run: python3 tools/frame_snake.py snake/github-snake.svg snake/github-snake-dark.svg
+
+      - name: Generate contribution and dashboard cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
         run: python3 tools/generate_github_cards.py
 
+      - name: Stage assets
+        run: cp snake/github-snake*.svg assets/ && ls -la assets/
+
       - name: Commit updated cards
         run: |
-          if [ -n "$(git status --porcelain assets)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets
-            git commit -m "chore: refresh contribution and dashboard cards"
-            git push
-          else
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
             echo "cards unchanged"
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
           fi

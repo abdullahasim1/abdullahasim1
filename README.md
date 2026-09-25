@@ -122,8 +122,8 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdullahasim1/abdullahasim1/output/github-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/abdullahasim1/abdullahasim1/output/github-snake.svg" alt="Animated snake eating my GitHub contributions" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+    <img src="./assets/github-snake.svg" alt="Animated snake eating my GitHub contributions" />
   </picture>
 </div>
 
