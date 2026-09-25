@@ -1,0 +1,24 @@
+name: Refresh README Stats Cache
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping stats endpoints to refresh cache
+        run: |
+          urls=(
+            "https://github-readme-stats-two-psi-85.vercel.app/api?username=abdullahasim1&show_icons=true"
+            "https://github-readme-stats-two-psi-85.vercel.app/api/top-langs/?username=abdullahasim1"
+            "https://streak-stats.demolab.com/?user=abdullahasim1"
+            "https://github-trophy.vercel.app/?username=abdullahasim1"
+            "https://activity-graph.vercel.app/graph?username=abdullahasim1"
+          )
+          for u in "${urls[@]}"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 30 "$u")
+            echo "$code  $u"
+          done
