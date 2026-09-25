@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3.5.0
         with:
@@ -22,6 +25,9 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Frame cards with themed window chrome
+        run: python3 tools/frame_snake.py dist/github-snake.svg dist/github-snake-dark.svg
 
       - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v5.0.0

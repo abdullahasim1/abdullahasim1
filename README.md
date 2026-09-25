@@ -137,21 +137,45 @@
 
 ---
 
-### 📈 Activity Graph
+### 📈 Contribution Activity
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions.svg" />
+    <img src="./assets/contributions.svg" alt="Contribution heatmap for the last 12 months with streaks, best day and activity averages" />
+  </picture>
+</div>
+
+<br/>
+
+<details>
+<summary><b>📉 Line graph (click to expand)</b></summary>
+<br/>
 
 <div align="center">
   <img src="https://activity-graph.vercel.app/graph?username=abdullahasim1&bg_color=0D1117&color=38BDF8&line=38BDF8&point=ffffff&area=true&height=200" alt="Activity Graph" />
 </div>
+
+</details>
 
 ---
 
 ### 📊 GitHub Analytics & Streak
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dashboard.svg" />
+    <img src="./assets/dashboard.svg" alt="Dashboard showing contributions, commits, pull requests, repositories, streaks, stars and followers" />
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
   <table border="0">
     <tr>
       <td>
-        <img src="https://github-readme-stats-two-psi-85.vercel.app/api?username=abdullahasim1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Abdullah's GitHub stats" />
+        <img src="https://github-readme-stats-two-psi-85.vercel.app/api?username=abdullahasim1&show_icons=true&rank_icon=github&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Abdullah's GitHub stats" />
       </td>
       <td>
         <img src="https://streak-stats.demolab.com/?user=abdullahasim1&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
