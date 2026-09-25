@@ -34,6 +34,9 @@
 
 ---
 
+### 🛠️ Currently Building
+I'm currently developing Full-Stack Web Applications & AI-powered tools, focusing on agentic AI and cloud architecture. Updates will be posted here monthly.
+---
 ### 🚀 Featured Projects
 
 <table>
@@ -212,6 +215,7 @@ I'm currently available for **full-time roles** and **freelance projects** — f
 <br/>
 
 <sub>⚡ Built with ❤️ by Abdullah Bin Asim</sub>
+UTC+5 (PKT)
 
 </div>
 
