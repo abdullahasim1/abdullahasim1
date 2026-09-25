@@ -164,6 +164,17 @@
 
 ---
 
+### 🖥️ My Setup
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/setup.svg" />
+    <img src="./assets/setup.svg" alt="My development setup: machine, OS, editor, terminal, keyboard, mouse, display and fuel of choice" />
+  </picture>
+</div>
+
+---
+
 <div align="center">
 
 ### 💼 Open to Opportunities

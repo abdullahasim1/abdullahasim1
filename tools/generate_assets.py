@@ -123,4 +123,56 @@ sk.append('</svg>')
 with open(os.path.join(OUT, "skills.svg"), "w", encoding="utf-8") as f:
     f.write("".join(sk))
 
-print("wrote", os.listdir(OUT))
+# ---------------------------------------------------------------- setup
+# Edit these values with your real gear, then re-run this script.
+setup = [
+    ("Machine", "Your laptop model here", "#38BDF8"),
+    ("OS", "Your OS / distro here", "#3FB950"),
+    ("Editor", "Your editor here", "#D29922"),
+    ("Terminal", "Your terminal + shell here", "#BC8CFF"),
+    ("Keyboard", "Your keyboard here", "#F85149"),
+    ("Mouse / Trackpad", "Your mouse here", "#FF7B72"),
+    ("Display", "Your monitor here", "#79C0FF"),
+    ("Coffee", "Your fuel of choice here", "#A5D6FF"),
+]
+
+S_W = 940
+S_ROW = 46
+S_TOP = 66
+S_H = S_TOP + S_ROW * len(setup) + 24
+
+su = []
+su.append(
+    f'<svg xmlns="http://www.w3.org/2000/svg" width="{S_W}" height="{S_H}" '
+    f'viewBox="0 0 {S_W} {S_H}" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">'
+)
+su.append(f'<rect width="{S_W}" height="{S_H}" rx="12" fill="{PANEL}" stroke="{BORDER}"/>')
+su.append(f'<path d="M0 12 A12 12 0 0 1 12 0 H{S_W - 12} A12 12 0 0 1 {S_W} 12 V44 H0 Z" fill="#21262D"/>')
+for color, cx in DOTS:
+    su.append(f'<circle cx="{cx}" cy="22" r="7" fill="{color}"/>')
+su.append(
+    f'<text x="{S_W // 2}" y="27" fill="{MUTED}" font-size="13" text-anchor="middle">'
+    f'~/setup — cat rig.json</text>'
+)
+
+for i, (label, value, color) in enumerate(setup):
+    cy = S_TOP + i * S_ROW
+    su.append(f'<circle cx="30" cy="{cy - 5}" r="5" fill="{color}"/>')
+    su.append(
+        f'<text x="52" y="{cy}" fill="{FG}" font-size="15" font-weight="600">'
+        f'{html.escape(label)}</text>'
+    )
+    su.append(
+        f'<text x="300" y="{cy}" fill="{color}" font-size="15">{html.escape(value)}</text>'
+    )
+    if i < len(setup) - 1:
+        su.append(
+            f'<line x1="30" y1="{cy + 16}" x2="{S_W - 30}" y2="{cy + 16}" '
+            f'stroke="{BORDER}" stroke-width="1" stroke-dasharray="3 5"/>'
+        )
+
+su.append('</svg>')
+with open(os.path.join(OUT, "setup.svg"), "w", encoding="utf-8") as f:
+    f.write("".join(su))
+
+print("wrote", sorted(os.listdir(OUT)))
