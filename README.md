@@ -18,7 +18,12 @@
 
 ---
 
-### 👨‍💻 About Me
+### 👋 About Me
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal.svg" />
+  <img src="./assets/terminal.svg" alt="Terminal: whoami → Abdullah Bin Asim, Full-Stack Developer & AI Automation" />
+</picture>
 
 - 🔭 I’m currently working on **Full-Stack Web Applications & AI-powered tools**
 - 🌱 I’m currently learning & exploring **Agentic AI, Cloud Architecture & DevOps**
@@ -98,6 +103,28 @@
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+</div>
+
+<br/>
+
+### 🎯 Skill Proficiency
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/skills.svg" />
+    <img src="./assets/skills.svg" alt="Skill proficiency bars: TypeScript 92%, JavaScript 90%, React/Next.js 88%, Node.js/Express 85%, Python 78%, PostgreSQL/MongoDB 80%, Docker/DevOps 72%" />
+  </picture>
+</div>
+
+---
+
+### 🐍 Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abdullahasim1/abdullahasim1/output/github-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/abdullahasim1/abdullahasim1/output/github-snake.svg" alt="Animated snake eating my GitHub contributions" />
+  </picture>
 </div>
 
 ---
