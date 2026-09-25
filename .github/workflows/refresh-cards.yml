@@ -42,6 +42,12 @@ jobs:
           GITHUB_USER: ${{ github.repository_owner }}
         run: python3 tools/generate_github_cards.py
 
+      - name: Generate hero card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: python3 tools/generate_hero.py
+
       - name: Stage assets
         run: cp snake/github-snake*.svg assets/ && ls -la assets/
 

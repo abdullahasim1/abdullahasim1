@@ -1,17 +1,18 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3,24,30&height=220&section=header&text=Hi%20there,%20I'm%20Abdullah%20Bin%20Asim%20👋&fontSize=38&fontAlignY=38&animation=fadeIn&fontColor=ffffff" width="100%" />
-
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;AI+%26+Automation+Enthusiast;Building+Modern+Web+Applications;Open+Source+Contributor" alt="Typing SVG" />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.svg" />
+    <img src="./assets/hero.svg" alt="Abdullah Bin Asim — Full-Stack Developer, AI &amp; Automation Enthusiast. Open to work. Lahore, Pakistan." />
+  </picture>
 
   <p align="center">
     <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="mailto:createfbid350@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://github.com/abdullahasim1"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+    <a href="https://abdullah-asim-dev.vercel.app"><img src="https://img.shields.io/badge/Portfolio-38BDF8?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
     <br/>
     <img src="https://komarev.com/ghpvc/?username=abdullahasim1&style=for-the-badge&color=38BDF8&label=PROFILE+VIEWS" alt="Profile views" />
+    <img src="https://img.shields.io/github/followers/abdullahasim1?style=for-the-badge&logo=github&label=Followers&color=8B949E" alt="GitHub followers" />
   </p>
 
 </div>
