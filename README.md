@@ -253,6 +253,13 @@ AI Cloud Engineer & Full-Stack Developer based in Lahore, Pakistan — working a
 
 ---
 
+### ✍️ Writing
+
+- **"The 4-File System That Makes Claude Code 10× Smarter"** — published on daily.dev; the file system I use to give Claude Code persistent project memory
+- More articles & project write-ups on my [portfolio blog →](https://abdullah-asim-dev.vercel.app)
+
+---
+
 ### 🖥️ My Setup
 
 <div align="center">
