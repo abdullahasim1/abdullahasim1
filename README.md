@@ -46,11 +46,15 @@ AI Cloud Engineer & Full-Stack Developer based in Lahore, Pakistan — working a
 
 | Certification | Issuer | Year |
 |---|---|---|
-| **AWS Certified Generative AI Developer – Professional** *(Early Adopter — first 5,000 worldwide)* | Amazon Web Services | 2026 |
-| **Claude Certified Architect – Foundations (CCAF)** | Anthropic | 2026 |
-| **AWS Certified AI Practitioner** | Amazon Web Services | 2025 |
-| **ChatGPT Deployment Practitioner** | OpenAI | 2026 |
-| **OpenAI Consultative Solutions Practitioner** | OpenAI | 2026 |
+| **AWS Certified Generative AI Developer – Professional** *(Early Adopter — first 5,000 worldwide)* | Amazon Web Services | Mar 2026 |
+| **Claude Certified Architect – Foundations (CCAF)** | Anthropic | Jul 2026 |
+| **AWS Certified AI Practitioner** | Amazon Web Services | Dec 2025 |
+| **ChatGPT Deployment Practitioner** | OpenAI | 22 Oct 2026 |
+| **OpenAI Consultative Solutions Practitioner** | OpenAI | 22 Oct 2026 |
+| **ChatGPT Solutions Practitioner** | OpenAI | 21 Oct 2026 |
+| **OpenAI Technical Practitioner** | OpenAI | 21 Oct 2026 |
+
+Verify: [Credly](https://www.credly.com/users/abdullah-bin-asim.ed30d504) · [Accredible](https://www.credential.net/profile/abdullahbinsim860299/wallet)
 
 ---
 
@@ -66,7 +70,7 @@ AI Cloud Engineer & Full-Stack Developer based in Lahore, Pakistan — working a
 ### 🛠️ Currently Building
 
 - **DevRox client systems** — AI lead intake + booking system on GoHighLevel (AI SMS qualify → voice call → warm transfer)
-- **Events Discovery Agent** — SerpAPI + Tavily + Claude pipeline that finds, verifies & dedupes events into PostgreSQL
+- **Noor Quran App** — Quran, prayer & AI tafsir app; release APK in progress
 - **Stonic-AI** — autonomous desktop AI command center (Python, 40k+ LOC) with human-gated safety design
 - **AI content pipelines** — n8n auto-publishing systems with LLM strategy → writing → editorial review stages
 
@@ -129,9 +133,10 @@ AI Cloud Engineer & Full-Stack Developer based in Lahore, Pakistan — working a
       <a href="https://github.com/abdullahasim1/abdullah-portfolio">💻 Code</a>
     </td>
     <td width="50%">
-      <h3>More on the way…</h3>
-      <p>Vaultify (secret management), AI Social Media Automation (Make.com), Events Discovery Agent & Stonic-AI — several are client/private repos.</p>
+      <h3><a href="https://noor-web-nu.vercel.app">Noor — Quran, Prayer &amp; AI Tafsir</a></h3>
+      <p>Prayer times, Qibla, Tasbih, 99 Names, 24 duas, Alafasy recitation with offline cache, AI tafsir, and Sahih Bukhari + Muslim hadith.</p>
       <br/>
+      <a href="https://noor-web-nu.vercel.app">🔗 Live</a> ·
       <a href="https://github.com/abdullahasim1?tab=repositories">📂 Browse all repositories →</a>
     </td>
   </tr>
@@ -171,15 +176,6 @@ AI Cloud Engineer & Full-Stack Developer based in Lahore, Pakistan — working a
 </div>
 
 <br/>
-
-### 🎯 Skill Proficiency
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/skills.svg" />
-    <img src="./assets/skills.svg" alt="Skill proficiency bars: TypeScript 92%, JavaScript 90%, React/Next.js 88%, Node.js/Express 85%, Python 78%, PostgreSQL/MongoDB 80%, Docker/DevOps 72%" />
-  </picture>
-</div>
 
 ---
 
