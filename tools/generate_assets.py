@@ -126,14 +126,14 @@ with open(os.path.join(OUT, "skills.svg"), "w", encoding="utf-8") as f:
 # ---------------------------------------------------------------- setup
 # Edit these values with your real gear, then re-run this script.
 setup = [
-    ("Machine", "Your laptop model here", "#38BDF8"),
-    ("OS", "Your OS / distro here", "#3FB950"),
-    ("Editor", "Your editor here", "#D29922"),
-    ("Terminal", "Your terminal + shell here", "#BC8CFF"),
-    ("Keyboard", "Your keyboard here", "#F85149"),
-    ("Mouse / Trackpad", "Your mouse here", "#FF7B72"),
-    ("Display", "Your monitor here", "#79C0FF"),
-    ("Coffee", "Your fuel of choice here", "#A5D6FF"),
+    ("Machine", "Dell Latitude E5570", "#38BDF8"),
+    ("OS", "Ubuntu (Linux)", "#3FB950"),
+    ("Editor", "VS Code · Android Studio", "#D29922"),
+    ("Terminal", "Bash — Ubuntu terminal", "#BC8CFF"),
+    ("Keyboard", "Built-in laptop keyboard", "#F85149"),
+    ("Mouse / Trackpad", "Built-in trackpad", "#FF7B72"),
+    ("Display", "Built-in laptop display", "#79C0FF"),
+    ("Coffee", "Coffee", "#A5D6FF"),
 ]
 
 S_W = 940
